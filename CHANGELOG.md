@@ -18,3 +18,4 @@ Formato: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). Versioname
 - Rate limit de eventos por socket (240/s), cabeçalhos de segurança, CSP Report-Only e health check com estado do store.
 - Deploy na Shard Cloud via `.shardcloud` (`talkmedown`), build do cliente servido pelo mesmo processo da API.
 - CI (typecheck, testes e build), smoke test de produção e suíte de testes do motor do jogo.
+- Avatar 512×512 e banner 960×540 da marca em `assets/branding`, com versões @2x.

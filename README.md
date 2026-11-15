@@ -146,6 +146,16 @@ Cada socket aceita até 240 eventos por segundo; acima disso o servidor responde
 
 A Activity guarda apenas o ID do Discord, o nome de exibição e a URL do avatar para montar a sala e o placar da equipe. Não há chat, histórico permanente, analytics ou integrações de terceiros; os snapshots de sala expiram pelo TTL e ficam no Redis da própria instância.
 
+## Identidade visual
+
+Os arquivos de marca ficam em `assets/branding`:
+
+- `talk-me-down-avatar.png` (512×512) — avatar do app/bot no Developer Portal;
+- `talk-me-down-banner.png` (960×540, 16:9) — banner da listagem na App Directory;
+- os `@2x` guardam a versão em alta resolução (1024×1024 e 1792×1008).
+
+O avatar é a bomba do símbolo da interface: esfera preta com aro âmbar, pavio com faísca verde e um X vermelho de fios cruzados. Sem texto, para continuar legível em 32px e dentro do recorte circular do Discord. O banner mostra a premissa do jogo — o painel com fios, botão e teclado à direita e o manual aberto embaixo, com o wordmark à esquerda. As cores são as mesmas da interface: âmbar `#ffb020`, verde `#6ef2a4`, vermelho `#ff4d5e`, azul `#63a4ff` e creme `#f5f1e8` sobre o fundo `#0b0f14`.
+
 ## Adicionar um idioma
 
 1. Copie `content/locales/en-US.json` para `content/locales/<locale>.json` e traduza os valores (inclusive `manual`).
