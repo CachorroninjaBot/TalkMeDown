@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "Talk Me Down",
+    "tagline": "L'un de vous voit la bombe. Les autres tiennent le manuel. Parlez vite.",
+    "loading": "Montage de la bombe…",
+    "bootError": "Impossible de lancer l'activité.",
+    "retry": "Réessayer"
+  },
+  "common": {
+    "you": "Vous",
+    "host": "Hôte",
+    "copy": "Copier le code",
+    "copied": "Copié",
+    "copyFailed": "Copiez-le à la main",
+    "leave": "Quitter",
+    "close": "Fermer",
+    "back": "Retour",
+    "offline": "Reconnexion…",
+    "connected": "Connecté",
+    "players": "joueurs",
+    "seconds": "{n}s"
+  },
+  "roles": {
+    "defuser": "Désamorceur",
+    "support": "Spécialiste",
+    "defuserHint": "Voit la bombe. Ne voit pas le manuel.",
+    "supportHint": "Tient le manuel. Ne voit pas la bombe."
+  },
+  "colors": {
+    "red": "rouge",
+    "blue": "bleu",
+    "yellow": "jaune",
+    "black": "noir",
+    "white": "blanc"
+  },
+  "labels": {
+    "abort": "ABANDON",
+    "detonate": "DÉTONER",
+    "hold": "MAINTENIR",
+    "press": "APPUYER"
+  },
+  "lobby": {
+    "title": "Briefing de désamorçage",
+    "subtitle": "Choisissez un désamorceur, partagez le code et passez sur le vocal.",
+    "roomCode": "Code du salon",
+    "crew": "Équipe",
+    "emptySlot": "Place libre",
+    "needPlayers": "{count} sur {min} requis — il faut au moins deux joueurs.",
+    "start": "Armer la bombe",
+    "waitingHost": "En attente du lancement par l'hôte.",
+    "defuserTitle": "Choisissez le désamorceur",
+    "chooseDefuser": "Nommer désamorceur",
+    "youAreDefuser": "Vous tenez la bombe",
+    "language": "Langue de la bombe",
+    "languageHint": "Langue du manuel et des étiquettes des modules.",
+    "roomFull": "Le salon est plein."
+  },
+  "briefing": {
+    "title": "Bombe armée",
+    "defuser": "Ouvrez les yeux. Décrivez la bombe à voix haute — vous ne voyez pas le manuel.",
+    "support": "Ouvrez vos pages du manuel. Demandez les détails au désamorceur.",
+    "startingIn": "Le minuteur démarre dans {seconds}s",
+    "strikes": "Trois erreurs et la bombe explose."
+  },
+  "game": {
+    "title": "Bombe",
+    "time": "Minuteur",
+    "serial": "Série",
+    "batteries": "Piles",
+    "strikes": "Erreurs",
+    "modules": "Modules",
+    "solved": "Résolu",
+    "armed": "Armé",
+    "wires": "Fils",
+    "button": "Bouton",
+    "keypad": "Clavier",
+    "cutWire": "Couper le fil",
+    "press": "Appuyer",
+    "hold": "Maintenir",
+    "release": "Relâcher",
+    "holding": "Maintenu…",
+    "strip": "Bande",
+    "onlyDefuser": "Seul le désamorceur peut toucher la bombe.",
+    "defuserConsole": "Console du désamorceur",
+    "manualConsole": "Manuel",
+    "yourPages": "Vos pages",
+    "noPages": "Vous n'avez aucune page cette manche.",
+    "askDefuser": "Demandez ce que voit le désamorceur. Lisez seulement vos pages.",
+    "watchBomb": "Dictez vos pages à voix haute. Le désamorceur fait le reste.",
+    "moduleStrike": "Erreur sur {module} !",
+    "moduleSolved": "{module} résolu.",
+    "batteryOne": "{n} pile",
+    "batteryMany": "{n} piles",
+    "lastEventStrike": "Erreur !",
+    "lastEventSolved": "Module résolu",
+    "emptyWire": "Aucun fil"
+  },
+  "manual": {
+    "title": "Manuel de désamorçage",
+    "intro": "Chaque bombe est différente. Ne lisez à voix haute que les pages que vous tenez.",
+    "sharedTitle": "Tout le monde peut lire ceci",
+    "sharedRules": [
+      "Le désamorceur voit la bombe mais pas le manuel. Les spécialistes voient le manuel mais pas la bombe.",
+      "Trois erreurs font exploser la bombe. Un module résolu le reste.",
+      "Le numéro de série et le nombre de piles comptent dans plusieurs règles."
+    ],
+    "wires": {
+      "title": "Fils",
+      "intro": "Coupez exactement un fil. Lisez les règles correspondant au nombre de fils visibles, de haut en bas, et arrêtez-vous à la première qui s'applique.",
+      "rules4": [
+        "Plus d'un fil rouge et le dernier chiffre de la série est impair → coupez le dernier fil rouge.",
+        "Le dernier fil est jaune et aucun fil n'est rouge → coupez le premier fil.",
+        "Exactement un fil bleu → coupez le premier fil.",
+        "Plus d'un fil jaune → coupez le quatrième fil.",
+        "Sinon → coupez le deuxième fil."
+      ],
+      "rules5": [
+        "Le dernier fil est noir et le dernier chiffre de la série est impair → coupez le quatrième fil.",
+        "Exactement un fil rouge et plus d'un fil jaune → coupez le premier fil.",
+        "Aucun fil noir → coupez le deuxième fil.",
+        "Sinon → coupez le premier fil."
+      ],
+      "rules6": [
+        "Aucun fil jaune et le dernier chiffre de la série est impair → coupez le troisième fil.",
+        "Exactement un fil jaune et plus d'un fil blanc → coupez le quatrième fil.",
+        "Aucun fil rouge → coupez le dernier fil.",
+        "Sinon → coupez le deuxième fil."
+      ],
+      "note": "Le « dernier fil » est le fil le plus à droite, vu par le désamorceur."
+    },
+    "button": {
+      "title": "Le bouton",
+      "intro": "Trouvez la première règle qui s'applique. APPUYER, c'est toucher une fois. MAINTENIR, c'est ne pas relâcher avant l'instruction du manuel.",
+      "rules": [
+        "Bouton bleu avec l'étiquette ABANDON → maintenir.",
+        "Plus d'une pile et l'étiquette DÉTONER → appuyer.",
+        "Bouton blanc et la série contient une voyelle → maintenir.",
+        "Plus de deux piles et la série n'a pas de voyelle → appuyer.",
+        "Bouton jaune → maintenir.",
+        "Bouton rouge avec l'étiquette MAINTENIR → appuyer.",
+        "Sinon → maintenir."
+      ],
+      "releaseTitle": "Relâcher un bouton maintenu",
+      "releaseIntro": "Tant que le désamorceur maintient le bouton, une bande colorée apparaît. Relâchez quand le minuteur affiche le chiffre correspondant.",
+      "releaseRules": [
+        "Bande bleue → relâchez quand le minuteur affiche 4.",
+        "Bande blanche → relâchez quand le minuteur affiche 1.",
+        "Bande jaune → relâchez quand le minuteur affiche 5.",
+        "Bande rouge → relâchez quand le minuteur affiche 7."
+      ],
+      "releaseWarning": "Relâcher trop tôt ou au mauvais moment est une erreur."
+    },
+    "keypad": {
+      "title": "Clavier",
+      "intro": "Le désamorceur voit quatre symboles. Trouvez l'unique colonne ci-dessous qui les contient tous, puis appuyez dans cet ordre, de haut en bas.",
+      "columnsTitle": "Colonnes de symboles",
+      "warning": "Un mauvais symbole efface la saisie et coûte une erreur."
+    }
+  },
+  "result": {
+    "defused": "Bombe désamorcée",
+    "exploded": "Boum",
+    "aborted": "Manche interrompue",
+    "defusedText": "Le minuteur s'est arrêté avec de la marge. La ville n'a rien su.",
+    "explodedText": "Trois erreurs. La bombe a gagné cette manche.",
+    "abortedText": "Le désamorceur a quitté la bombe. La manche est terminée.",
+    "timeLeft": "{seconds}s restaient au minuteur",
+    "rematch": "Armer une nouvelle bombe",
+    "waitingHost": "En attente d'une nouvelle bombe par l'hôte."
+  },
+  "notices": {
+    "hostChanged": "Vous êtes maintenant l'hôte."
+  },
+  "errors": {
+    "CONNECT": "Connexion au serveur perdue. Reconnexion…",
+    "AUTH": "Votre session a expiré. Rechargez l'activité.",
+    "GENERIC": "Une erreur est survenue. Réessayez.",
+    "ROOM_NOT_FOUND": "Salon introuvable. Vérifiez le code.",
+    "ROOM_FULL": "Ce salon est plein.",
+    "ROOM_IN_PROGRESS": "Cette bombe est déjà lancée.",
+    "ROOM_LIMIT": "Le serveur est saturé. Réessayez bientôt.",
+    "NOT_HOST": "Seul l'hôte peut faire cela.",
+    "INVALID_PHASE": "Cette action n'est pas disponible maintenant.",
+    "NOT_ENOUGH_PLAYERS": "Il faut au moins deux joueurs.",
+    "NOT_DEFUSER": "Seul le désamorceur peut toucher la bombe.",
+    "PLAYER_NOT_FOUND": "Ce joueur n'est plus là.",
+    "INVALID_INPUT": "Un problème est survenu avec cette action.",
+    "RATE_LIMITED": "Ralentissez un peu.",
+    "UNAUTHORIZED": "Votre session a expiré. Rechargez l'activité.",
+    "INTERNAL": "Erreur inattendue. Réessayez."
+  }
+}

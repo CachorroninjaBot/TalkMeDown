@@ -1,0 +1,7 @@
+DISPLAY_NAME=Talk Me Down
+DESCRIPTION=Um desarma a bomba, os outros leem o manual. Falem rapido.
+LANGUAGE=node
+MEMORY=1024
+VERSION=recommended
+SUBDOMAIN=talkmedown
+CUSTOM_COMMAND=npm ci --include=dev --no-audit --no-fund && npm run build && npm start

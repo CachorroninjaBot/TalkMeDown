@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "Talk Me Down",
+    "tagline": "One of you sees the bomb. The others hold the manual. Talk fast.",
+    "loading": "Wiring the bomb…",
+    "bootError": "Could not start the activity.",
+    "retry": "Try again"
+  },
+  "common": {
+    "you": "You",
+    "host": "Host",
+    "copy": "Copy code",
+    "copied": "Copied",
+    "copyFailed": "Copy it manually",
+    "leave": "Leave",
+    "close": "Close",
+    "back": "Back",
+    "offline": "Reconnecting…",
+    "connected": "Connected",
+    "players": "players",
+    "seconds": "{n}s"
+  },
+  "roles": {
+    "defuser": "Defuser",
+    "support": "Specialist",
+    "defuserHint": "Sees the bomb. Cannot see the manual.",
+    "supportHint": "Holds the manual. Cannot see the bomb."
+  },
+  "colors": {
+    "red": "red",
+    "blue": "blue",
+    "yellow": "yellow",
+    "black": "black",
+    "white": "white"
+  },
+  "labels": {
+    "abort": "ABORT",
+    "detonate": "DETONATE",
+    "hold": "HOLD",
+    "press": "PRESS"
+  },
+  "lobby": {
+    "title": "Bomb disposal briefing",
+    "subtitle": "Pick a defuser, share the room code and get on voice chat.",
+    "roomCode": "Room code",
+    "crew": "Crew",
+    "emptySlot": "Open seat",
+    "needPlayers": "{count} of {min} needed — at least two players must join.",
+    "start": "Arm the bomb",
+    "waitingHost": "Waiting for the host to start.",
+    "defuserTitle": "Choose the defuser",
+    "chooseDefuser": "Make defuser",
+    "youAreDefuser": "You are handling the bomb",
+    "language": "Bomb language",
+    "languageHint": "Language of the manual and the module labels.",
+    "roomFull": "Room is full."
+  },
+  "briefing": {
+    "title": "Bomb armed",
+    "defuser": "Open your eyes. Describe the bomb out loud — you cannot see the manual.",
+    "support": "Open your manual pages. Ask the defuser for details.",
+    "startingIn": "The timer starts in {seconds}s",
+    "strikes": "Three strikes and the bomb blows."
+  },
+  "game": {
+    "title": "Bomb",
+    "time": "Timer",
+    "serial": "Serial",
+    "batteries": "Batteries",
+    "strikes": "Strikes",
+    "modules": "Modules",
+    "solved": "Solved",
+    "armed": "Armed",
+    "wires": "Wires",
+    "button": "Button",
+    "keypad": "Keypad",
+    "cutWire": "Cut wire",
+    "press": "Press",
+    "hold": "Hold",
+    "release": "Release",
+    "holding": "Holding…",
+    "strip": "Strip",
+    "onlyDefuser": "Only the defuser can touch the bomb.",
+    "defuserConsole": "Defuser console",
+    "manualConsole": "Manual",
+    "yourPages": "Your pages",
+    "noPages": "You have no pages this round.",
+    "askDefuser": "Ask the defuser what they see. Read only your pages.",
+    "watchBomb": "Relay your pages out loud. The defuser does the rest.",
+    "moduleStrike": "Strike on {module}!",
+    "moduleSolved": "{module} solved.",
+    "batteryOne": "{n} battery",
+    "batteryMany": "{n} batteries",
+    "lastEventStrike": "Strike!",
+    "lastEventSolved": "Module solved",
+    "emptyWire": "No wire"
+  },
+  "manual": {
+    "title": "Bomb disposal manual",
+    "intro": "Every bomb is different. Read only the pages you hold out loud.",
+    "sharedTitle": "Everyone may read this",
+    "sharedRules": [
+      "The defuser sees the bomb but not the manual. Specialists see the manual but not the bomb.",
+      "Three strikes blow the bomb. A solved module stays solved.",
+      "The serial number and the battery count matter in several rules."
+    ],
+    "wires": {
+      "title": "Wires",
+      "intro": "Cut exactly one wire. Read the rules for the number of wires shown, from top to bottom, and stop at the first one that applies.",
+      "rules4": [
+        "More than one red wire and the last digit of the serial is odd → cut the last red wire.",
+        "The last wire is yellow and there are no red wires → cut the first wire.",
+        "Exactly one blue wire → cut the first wire.",
+        "More than one yellow wire → cut the fourth wire.",
+        "Otherwise → cut the second wire."
+      ],
+      "rules5": [
+        "The last wire is black and the last digit of the serial is odd → cut the fourth wire.",
+        "Exactly one red wire and more than one yellow wire → cut the first wire.",
+        "No black wires → cut the second wire.",
+        "Otherwise → cut the first wire."
+      ],
+      "rules6": [
+        "No yellow wires and the last digit of the serial is odd → cut the third wire.",
+        "Exactly one yellow wire and more than one white wire → cut the fourth wire.",
+        "No red wires → cut the last wire.",
+        "Otherwise → cut the second wire."
+      ],
+      "note": "“Last wire” means the rightmost wire as the defuser sees it."
+    },
+    "button": {
+      "title": "The button",
+      "intro": "Find the first rule that matches. PRESS means tap once. HOLD means keep it down until the manual tells you to release.",
+      "rules": [
+        "Blue button with label ABORT → hold.",
+        "More than one battery and label DETONATE → press.",
+        "White button and the serial has a vowel → hold.",
+        "More than two batteries and the serial has no vowel → press.",
+        "Yellow button → hold.",
+        "Red button with label HOLD → press.",
+        "Anything else → hold."
+      ],
+      "releaseTitle": "Releasing a held button",
+      "releaseIntro": "While the defuser holds the button, a colored strip appears. Release when the timer shows the matching digit.",
+      "releaseRules": [
+        "Blue strip → release when the timer shows 4.",
+        "White strip → release when the timer shows 1.",
+        "Yellow strip → release when the timer shows 5.",
+        "Red strip → release when the timer shows 7."
+      ],
+      "releaseWarning": "Releasing too quickly or at the wrong moment is a strike."
+    },
+    "keypad": {
+      "title": "Keypad",
+      "intro": "The defuser sees four symbols. Find the single column below that contains all four, then press them in this order, from top to bottom of that column.",
+      "columnsTitle": "Symbol columns",
+      "warning": "One wrong symbol resets the entry and costs a strike."
+    }
+  },
+  "result": {
+    "defused": "Bomb defused",
+    "exploded": "Boom",
+    "aborted": "Round aborted",
+    "defusedText": "The timer stopped with time to spare. The city never knew.",
+    "explodedText": "Three strikes. The bomb won this round.",
+    "abortedText": "The defuser left the bomb. The round is over.",
+    "timeLeft": "{seconds}s left on the timer",
+    "rematch": "Arm a new bomb",
+    "waitingHost": "Waiting for the host to arm a new bomb."
+  },
+  "notices": {
+    "hostChanged": "You are the host now."
+  },
+  "errors": {
+    "CONNECT": "Lost connection to the server. Reconnecting…",
+    "AUTH": "Your session expired. Reload the activity.",
+    "GENERIC": "Something went wrong. Try again.",
+    "ROOM_NOT_FOUND": "Room not found. Check the code.",
+    "ROOM_FULL": "This room is full.",
+    "ROOM_IN_PROGRESS": "That bomb is already ticking.",
+    "ROOM_LIMIT": "The server is at capacity. Try again soon.",
+    "NOT_HOST": "Only the host can do that.",
+    "INVALID_PHASE": "That action is not available right now.",
+    "NOT_ENOUGH_PLAYERS": "At least two players are needed.",
+    "NOT_DEFUSER": "Only the defuser can touch the bomb.",
+    "PLAYER_NOT_FOUND": "That player is no longer here.",
+    "INVALID_INPUT": "Something went wrong with that action.",
+    "RATE_LIMITED": "Slow down a little.",
+    "UNAUTHORIZED": "Your session expired. Reload the activity.",
+    "INTERNAL": "Unexpected error. Try again."
+  }
+}

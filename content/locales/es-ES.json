@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "Talk Me Down",
+    "tagline": "Uno de ustedes ve la bomba. Los demás sostienen el manual. Hablen rápido.",
+    "loading": "Montando la bomba…",
+    "bootError": "No se pudo iniciar la actividad.",
+    "retry": "Reintentar"
+  },
+  "common": {
+    "you": "Tú",
+    "host": "Anfitrión",
+    "copy": "Copiar código",
+    "copied": "Copiado",
+    "copyFailed": "Cópialo a mano",
+    "leave": "Salir",
+    "close": "Cerrar",
+    "back": "Volver",
+    "offline": "Reconectando…",
+    "connected": "Conectado",
+    "players": "jugadores",
+    "seconds": "{n}s"
+  },
+  "roles": {
+    "defuser": "Desactivador",
+    "support": "Especialista",
+    "defuserHint": "Ve la bomba. No ve el manual.",
+    "supportHint": "Sostiene el manual. No ve la bomba."
+  },
+  "colors": {
+    "red": "rojo",
+    "blue": "azul",
+    "yellow": "amarillo",
+    "black": "negro",
+    "white": "blanco"
+  },
+  "labels": {
+    "abort": "ABORTAR",
+    "detonate": "DETONAR",
+    "hold": "MANTENER",
+    "press": "PULSAR"
+  },
+  "lobby": {
+    "title": "Briefing de desactivación",
+    "subtitle": "Elegid un desactivador, compartid el código y entrad al chat de voz.",
+    "roomCode": "Código de sala",
+    "crew": "Equipo",
+    "emptySlot": "Plaza libre",
+    "needPlayers": "{count} de {min} necesarios — hacen falta al menos dos jugadores.",
+    "start": "Armar la bomba",
+    "waitingHost": "Esperando a que el anfitrión empiece.",
+    "defuserTitle": "Elegid al desactivador",
+    "chooseDefuser": "Hacer desactivador",
+    "youAreDefuser": "Tú llevas la bomba",
+    "language": "Idioma de la bomba",
+    "languageHint": "Idioma del manual y de las etiquetas de los módulos.",
+    "roomFull": "La sala está llena."
+  },
+  "briefing": {
+    "title": "Bomba armada",
+    "defuser": "Abre los ojos. Describe la bomba en voz alta: no ves el manual.",
+    "support": "Abre tus páginas del manual. Pregunta los detalles al desactivador.",
+    "startingIn": "El cronómetro empieza en {seconds}s",
+    "strikes": "Tres fallos y la bomba estalla."
+  },
+  "game": {
+    "title": "Bomba",
+    "time": "Cronómetro",
+    "serial": "Serie",
+    "batteries": "Pilas",
+    "strikes": "Fallos",
+    "modules": "Módulos",
+    "solved": "Resuelto",
+    "armed": "Armado",
+    "wires": "Cables",
+    "button": "Botón",
+    "keypad": "Teclado",
+    "cutWire": "Cortar cable",
+    "press": "Pulsar",
+    "hold": "Mantener",
+    "release": "Soltar",
+    "holding": "Manteniendo…",
+    "strip": "Franja",
+    "onlyDefuser": "Solo el desactivador puede tocar la bomba.",
+    "defuserConsole": "Panel del desactivador",
+    "manualConsole": "Manual",
+    "yourPages": "Tus páginas",
+    "noPages": "No tienes páginas en esta ronda.",
+    "askDefuser": "Pregunta qué ve el desactivador. Lee solo tus páginas.",
+    "watchBomb": "Dicta tus páginas en voz alta. El desactivador hace el resto.",
+    "moduleStrike": "¡Fallo en {module}!",
+    "moduleSolved": "{module} resuelto.",
+    "batteryOne": "{n} pila",
+    "batteryMany": "{n} pilas",
+    "lastEventStrike": "¡Fallo!",
+    "lastEventSolved": "Módulo resuelto",
+    "emptyWire": "Sin cable"
+  },
+  "manual": {
+    "title": "Manual de desactivación",
+    "intro": "Cada bomba es distinta. Lee en voz alta solo las páginas que tienes.",
+    "sharedTitle": "Todos pueden leer esto",
+    "sharedRules": [
+      "El desactivador ve la bomba, pero no el manual. Los especialistas ven el manual, pero no la bomba.",
+      "Tres fallos hacen estallar la bomba. Un módulo resuelto sigue resuelto.",
+      "El número de serie y la cantidad de pilas importan en varias reglas."
+    ],
+    "wires": {
+      "title": "Cables",
+      "intro": "Corta exactamente un cable. Lee las reglas del número de cables indicado, de arriba abajo, y detente en la primera que se cumpla.",
+      "rules4": [
+        "Más de un cable rojo y el último dígito de la serie es impar → corta el último cable rojo.",
+        "El último cable es amarillo y no hay cables rojos → corta el primer cable.",
+        "Exactamente un cable azul → corta el primer cable.",
+        "Más de un cable amarillo → corta el cuarto cable.",
+        "En cualquier otro caso → corta el segundo cable."
+      ],
+      "rules5": [
+        "El último cable es negro y el último dígito de la serie es impar → corta el cuarto cable.",
+        "Exactamente un cable rojo y más de un cable amarillo → corta el primer cable.",
+        "Ningún cable negro → corta el segundo cable.",
+        "En cualquier otro caso → corta el primer cable."
+      ],
+      "rules6": [
+        "Ningún cable amarillo y el último dígito de la serie es impar → corta el tercer cable.",
+        "Exactamente un cable amarillo y más de un cable blanco → corta el cuarto cable.",
+        "Ningún cable rojo → corta el último cable.",
+        "En cualquier otro caso → corta el segundo cable."
+      ],
+      "note": "El “último cable” es el de más a la derecha, tal como lo ve el desactivador."
+    },
+    "button": {
+      "title": "El botón",
+      "intro": "Busca la primera regla que se cumpla. PULSAR es tocar una vez. MANTENER es no soltar hasta que el manual lo indique.",
+      "rules": [
+        "Botón azul con etiqueta ABORTAR → mantener.",
+        "Más de una pila y etiqueta DETONAR → pulsar.",
+        "Botón blanco y la serie tiene vocal → mantener.",
+        "Más de dos pilas y la serie no tiene vocal → pulsar.",
+        "Botón amarillo → mantener.",
+        "Botón rojo con etiqueta MANTENER → pulsar.",
+        "Cualquier otro caso → mantener."
+      ],
+      "releaseTitle": "Soltar un botón mantenido",
+      "releaseIntro": "Mientras el desactivador mantiene el botón aparece una franja de color. Suelta cuando el cronómetro muestre el dígito correspondiente.",
+      "releaseRules": [
+        "Franja azul → suelta cuando el cronómetro muestre 4.",
+        "Franja blanca → suelta cuando el cronómetro muestre 1.",
+        "Franja amarilla → suelta cuando el cronómetro muestre 5.",
+        "Franja roja → suelta cuando el cronómetro muestre 7."
+      ],
+      "releaseWarning": "Soltar demasiado pronto o en el momento equivocado es un fallo."
+    },
+    "keypad": {
+      "title": "Teclado",
+      "intro": "El desactivador ve cuatro símbolos. Encuentra la única columna de abajo que los contenga todos y pulsa en ese orden, de arriba abajo.",
+      "columnsTitle": "Columnas de símbolos",
+      "warning": "Un símbolo equivocado borra la entrada y cuesta un fallo."
+    }
+  },
+  "result": {
+    "defused": "Bomba desactivada",
+    "exploded": "Bum",
+    "aborted": "Ronda cancelada",
+    "defusedText": "El cronómetro se detuvo con margen. La ciudad nunca lo supo.",
+    "explodedText": "Tres fallos. La bomba ganó esta ronda.",
+    "abortedText": "El desactivador dejó la bomba. La ronda terminó.",
+    "timeLeft": "Quedaban {seconds}s en el cronómetro",
+    "rematch": "Armar otra bomba",
+    "waitingHost": "Esperando a que el anfitrión arme otra bomba."
+  },
+  "notices": {
+    "hostChanged": "Ahora eres el anfitrión."
+  },
+  "errors": {
+    "CONNECT": "Conexión perdida con el servidor. Reconectando…",
+    "AUTH": "Tu sesión expiró. Recarga la actividad.",
+    "GENERIC": "Algo salió mal. Inténtalo de nuevo.",
+    "ROOM_NOT_FOUND": "Sala no encontrada. Revisa el código.",
+    "ROOM_FULL": "Esta sala está llena.",
+    "ROOM_IN_PROGRESS": "Esa bomba ya está en marcha.",
+    "ROOM_LIMIT": "El servidor está al límite. Inténtalo pronto.",
+    "NOT_HOST": "Solo el anfitrión puede hacer eso.",
+    "INVALID_PHASE": "Esa acción no está disponible ahora.",
+    "NOT_ENOUGH_PLAYERS": "Hacen falta al menos dos jugadores.",
+    "NOT_DEFUSER": "Solo el desactivador puede tocar la bomba.",
+    "PLAYER_NOT_FOUND": "Ese jugador ya no está aquí.",
+    "INVALID_INPUT": "Algo falló con esa acción.",
+    "RATE_LIMITED": "Baja el ritmo.",
+    "UNAUTHORIZED": "Tu sesión expiró. Recarga la actividad.",
+    "INTERNAL": "Error inesperado. Inténtalo de nuevo."
+  }
+}

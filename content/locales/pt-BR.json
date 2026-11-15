@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "Talk Me Down",
+    "tagline": "Um de vocês vê a bomba. Os outros seguram o manual. Falem rápido.",
+    "loading": "Montando a bomba…",
+    "bootError": "Não foi possível iniciar a atividade.",
+    "retry": "Tentar de novo"
+  },
+  "common": {
+    "you": "Você",
+    "host": "Anfitrião",
+    "copy": "Copiar código",
+    "copied": "Copiado",
+    "copyFailed": "Copie manualmente",
+    "leave": "Sair",
+    "close": "Fechar",
+    "back": "Voltar",
+    "offline": "Reconectando…",
+    "connected": "Conectado",
+    "players": "jogadores",
+    "seconds": "{n}s"
+  },
+  "roles": {
+    "defuser": "Desarmador",
+    "support": "Especialista",
+    "defuserHint": "Vê a bomba. Não vê o manual.",
+    "supportHint": "Segura o manual. Não vê a bomba."
+  },
+  "colors": {
+    "red": "vermelho",
+    "blue": "azul",
+    "yellow": "amarelo",
+    "black": "preto",
+    "white": "branco"
+  },
+  "labels": {
+    "abort": "ABORTAR",
+    "detonate": "DETONAR",
+    "hold": "SEGURAR",
+    "press": "APERTAR"
+  },
+  "lobby": {
+    "title": "Briefing de desarme",
+    "subtitle": "Escolham um desarmador, compartilhem o código e entrem no chat de voz.",
+    "roomCode": "Código da sala",
+    "crew": "Equipe",
+    "emptySlot": "Vaga aberta",
+    "needPlayers": "{count} de {min} necessários — pelo menos dois jogadores.",
+    "start": "Armar a bomba",
+    "waitingHost": "Aguardando o anfitrião iniciar.",
+    "defuserTitle": "Escolham o desarmador",
+    "chooseDefuser": "Tornar desarmador",
+    "youAreDefuser": "Você está com a bomba",
+    "language": "Idioma da bomba",
+    "languageHint": "Idioma do manual e das etiquetas dos módulos.",
+    "roomFull": "A sala está cheia."
+  },
+  "briefing": {
+    "title": "Bomba armada",
+    "defuser": "Abra os olhos. Descreva a bomba em voz alta — você não vê o manual.",
+    "support": "Abra suas páginas do manual. Pergunte os detalhes ao desarmador.",
+    "startingIn": "O cronômetro começa em {seconds}s",
+    "strikes": "Três erros e a bomba explode."
+  },
+  "game": {
+    "title": "Bomba",
+    "time": "Cronômetro",
+    "serial": "Série",
+    "batteries": "Baterias",
+    "strikes": "Erros",
+    "modules": "Módulos",
+    "solved": "Resolvido",
+    "armed": "Armado",
+    "wires": "Fios",
+    "button": "Botão",
+    "keypad": "Teclado",
+    "cutWire": "Cortar fio",
+    "press": "Apertar",
+    "hold": "Segurar",
+    "release": "Soltar",
+    "holding": "Segurando…",
+    "strip": "Faixa",
+    "onlyDefuser": "Só o desarmador pode tocar na bomba.",
+    "defuserConsole": "Painel do desarmador",
+    "manualConsole": "Manual",
+    "yourPages": "Suas páginas",
+    "noPages": "Você não tem páginas nesta rodada.",
+    "askDefuser": "Pergunte o que o desarmador vê. Leia apenas suas páginas.",
+    "watchBomb": "Passe suas páginas em voz alta. O desarmador faz o resto.",
+    "moduleStrike": "Erro em {module}!",
+    "moduleSolved": "{module} resolvido.",
+    "batteryOne": "{n} bateria",
+    "batteryMany": "{n} baterias",
+    "lastEventStrike": "Erro!",
+    "lastEventSolved": "Módulo resolvido",
+    "emptyWire": "Sem fio"
+  },
+  "manual": {
+    "title": "Manual de desarme",
+    "intro": "Cada bomba é diferente. Leia em voz alta apenas as páginas que você tem.",
+    "sharedTitle": "Todos podem ler isto",
+    "sharedRules": [
+      "O desarmador vê a bomba, mas não o manual. Os especialistas veem o manual, mas não a bomba.",
+      "Três erros explodem a bomba. Um módulo resolvido continua resolvido.",
+      "O número de série e a quantidade de baterias importam em várias regras."
+    ],
+    "wires": {
+      "title": "Fios",
+      "intro": "Corte exatamente um fio. Leia as regras da quantidade de fios informada, de cima para baixo, e pare na primeira que se aplicar.",
+      "rules4": [
+        "Mais de um fio vermelho e o último dígito da série é ímpar → corte o último fio vermelho.",
+        "O último fio é amarelo e não há fios vermelhos → corte o primeiro fio.",
+        "Exatamente um fio azul → corte o primeiro fio.",
+        "Mais de um fio amarelo → corte o quarto fio.",
+        "Caso contrário → corte o segundo fio."
+      ],
+      "rules5": [
+        "O último fio é preto e o último dígito da série é ímpar → corte o quarto fio.",
+        "Exatamente um fio vermelho e mais de um fio amarelo → corte o primeiro fio.",
+        "Nenhum fio preto → corte o segundo fio.",
+        "Caso contrário → corte o primeiro fio."
+      ],
+      "rules6": [
+        "Nenhum fio amarelo e o último dígito da série é ímpar → corte o terceiro fio.",
+        "Exatamente um fio amarelo e mais de um fio branco → corte o quarto fio.",
+        "Nenhum fio vermelho → corte o último fio.",
+        "Caso contrário → corte o segundo fio."
+      ],
+      "note": "“Último fio” é o fio mais à direita, como o desarmador vê."
+    },
+    "button": {
+      "title": "O botão",
+      "intro": "Encontre a primeira regra que se aplica. APERTAR é tocar uma vez. SEGURAR é manter pressionado até o manual mandar soltar.",
+      "rules": [
+        "Botão azul com etiqueta ABORTAR → segure.",
+        "Mais de uma bateria e etiqueta DETONAR → aperte.",
+        "Botão branco e a série tem vogal → segure.",
+        "Mais de duas baterias e a série não tem vogal → aperte.",
+        "Botão amarelo → segure.",
+        "Botão vermelho com etiqueta SEGURAR → aperte.",
+        "Qualquer outro caso → segure."
+      ],
+      "releaseTitle": "Soltar um botão segurado",
+      "releaseIntro": "Enquanto o desarmador segura o botão, aparece uma faixa colorida. Solte quando o cronômetro mostrar o dígito correspondente.",
+      "releaseRules": [
+        "Faixa azul → solte quando o cronômetro mostrar 4.",
+        "Faixa branca → solte quando o cronômetro mostrar 1.",
+        "Faixa amarela → solte quando o cronômetro mostrar 5.",
+        "Faixa vermelha → solte quando o cronômetro mostrar 7."
+      ],
+      "releaseWarning": "Soltar rápido demais ou na hora errada é um erro."
+    },
+    "keypad": {
+      "title": "Teclado",
+      "intro": "O desarmador vê quatro símbolos. Encontre a única coluna abaixo que contém os quatro e mande apertar nessa ordem, de cima para baixo.",
+      "columnsTitle": "Colunas de símbolos",
+      "warning": "Um símbolo errado zera a entrada e custa um erro."
+    }
+  },
+  "result": {
+    "defused": "Bomba desarmada",
+    "exploded": "Bum",
+    "aborted": "Rodada abortada",
+    "defusedText": "O cronômetro parou com folga. A cidade nem soube.",
+    "explodedText": "Três erros. A bomba venceu esta rodada.",
+    "abortedText": "O desarmador saiu da bomba. A rodada acabou.",
+    "timeLeft": "{seconds}s restantes no cronômetro",
+    "rematch": "Armar nova bomba",
+    "waitingHost": "Aguardando o anfitrião armar uma nova bomba."
+  },
+  "notices": {
+    "hostChanged": "Agora você é o anfitrião."
+  },
+  "errors": {
+    "CONNECT": "Conexão perdida com o servidor. Reconectando…",
+    "AUTH": "Sua sessão expirou. Recarregue a atividade.",
+    "GENERIC": "Algo deu errado. Tente de novo.",
+    "ROOM_NOT_FOUND": "Sala não encontrada. Confira o código.",
+    "ROOM_FULL": "Esta sala está cheia.",
+    "ROOM_IN_PROGRESS": "Essa bomba já está correndo.",
+    "ROOM_LIMIT": "O servidor está no limite. Tente em instantes.",
+    "NOT_HOST": "Só o anfitrião pode fazer isso.",
+    "INVALID_PHASE": "Essa ação não está disponível agora.",
+    "NOT_ENOUGH_PLAYERS": "São necessários pelo menos dois jogadores.",
+    "NOT_DEFUSER": "Só o desarmador pode tocar na bomba.",
+    "PLAYER_NOT_FOUND": "Esse jogador não está mais aqui.",
+    "INVALID_INPUT": "Algo deu errado nessa ação.",
+    "RATE_LIMITED": "Calma um pouco.",
+    "UNAUTHORIZED": "Sua sessão expirou. Recarregue a atividade.",
+    "INTERNAL": "Erro inesperado. Tente de novo."
+  }
+}

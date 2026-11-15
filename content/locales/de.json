@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "Talk Me Down",
+    "tagline": "Einer sieht die Bombe. Die anderen halten das Handbuch. Redet schnell.",
+    "loading": "Bombe wird verdrahtet…",
+    "bootError": "Die Aktivität konnte nicht gestartet werden.",
+    "retry": "Erneut versuchen"
+  },
+  "common": {
+    "you": "Du",
+    "host": "Host",
+    "copy": "Code kopieren",
+    "copied": "Kopiert",
+    "copyFailed": "Bitte manuell kopieren",
+    "leave": "Verlassen",
+    "close": "Schließen",
+    "back": "Zurück",
+    "offline": "Verbindung wird wiederhergestellt…",
+    "connected": "Verbunden",
+    "players": "Spieler",
+    "seconds": "{n}s"
+  },
+  "roles": {
+    "defuser": "Entschärfer",
+    "support": "Spezialist",
+    "defuserHint": "Sieht die Bombe. Sieht das Handbuch nicht.",
+    "supportHint": "Hält das Handbuch. Sieht die Bombe nicht."
+  },
+  "colors": {
+    "red": "rot",
+    "blue": "blau",
+    "yellow": "gelb",
+    "black": "schwarz",
+    "white": "weiß"
+  },
+  "labels": {
+    "abort": "ABBRECHEN",
+    "detonate": "ZÜNDEN",
+    "hold": "HALTEN",
+    "press": "DRÜCKEN"
+  },
+  "lobby": {
+    "title": "Entschärfungs-Briefing",
+    "subtitle": "Wählt einen Entschärfer, teilt den Code und geht in den Sprachchat.",
+    "roomCode": "Raumcode",
+    "crew": "Team",
+    "emptySlot": "Freier Platz",
+    "needPlayers": "{count} von {min} nötig — mindestens zwei Spieler.",
+    "start": "Bombe scharf machen",
+    "waitingHost": "Warte auf den Start durch den Host.",
+    "defuserTitle": "Wählt den Entschärfer",
+    "chooseDefuser": "Zum Entschärfer machen",
+    "youAreDefuser": "Du hältst die Bombe",
+    "language": "Sprache der Bombe",
+    "languageHint": "Sprache des Handbuchs und der Modulbeschriftungen.",
+    "roomFull": "Der Raum ist voll."
+  },
+  "briefing": {
+    "title": "Bombe scharf",
+    "defuser": "Augen auf. Beschreibe die Bombe laut — du siehst das Handbuch nicht.",
+    "support": "Öffne deine Handbuchseiten. Frag den Entschärfer nach Details.",
+    "startingIn": "Der Timer startet in {seconds}s",
+    "strikes": "Drei Fehler und die Bombe explodiert."
+  },
+  "game": {
+    "title": "Bombe",
+    "time": "Timer",
+    "serial": "Serie",
+    "batteries": "Batterien",
+    "strikes": "Fehler",
+    "modules": "Module",
+    "solved": "Gelöst",
+    "armed": "Scharf",
+    "wires": "Kabel",
+    "button": "Knopf",
+    "keypad": "Tastenfeld",
+    "cutWire": "Kabel durchtrennen",
+    "press": "Drücken",
+    "hold": "Halten",
+    "release": "Loslassen",
+    "holding": "Wird gehalten…",
+    "strip": "Streifen",
+    "onlyDefuser": "Nur der Entschärfer darf die Bombe berühren.",
+    "defuserConsole": "Entschärfer-Konsole",
+    "manualConsole": "Handbuch",
+    "yourPages": "Deine Seiten",
+    "noPages": "Du hast in dieser Runde keine Seiten.",
+    "askDefuser": "Frag, was der Entschärfer sieht. Lies nur deine Seiten vor.",
+    "watchBomb": "Gib deine Seiten laut weiter. Der Entschärfer macht den Rest.",
+    "moduleStrike": "Fehler bei {module}!",
+    "moduleSolved": "{module} gelöst.",
+    "batteryOne": "{n} Batterie",
+    "batteryMany": "{n} Batterien",
+    "lastEventStrike": "Fehler!",
+    "lastEventSolved": "Modul gelöst",
+    "emptyWire": "Kein Kabel"
+  },
+  "manual": {
+    "title": "Entschärfungshandbuch",
+    "intro": "Jede Bombe ist anders. Lies nur die Seiten laut vor, die du hältst.",
+    "sharedTitle": "Das dürfen alle lesen",
+    "sharedRules": [
+      "Der Entschärfer sieht die Bombe, aber nicht das Handbuch. Spezialisten sehen das Handbuch, aber nicht die Bombe.",
+      "Drei Fehler sprengen die Bombe. Ein gelöstes Modul bleibt gelöst.",
+      "Seriennummer und Batterieanzahl sind in mehreren Regeln wichtig."
+    ],
+    "wires": {
+      "title": "Kabel",
+      "intro": "Durchtrenne genau ein Kabel. Lies die Regeln für die angezeigte Kabelanzahl von oben nach unten und nimm die erste passende.",
+      "rules4": [
+        "Mehr als ein rotes Kabel und die letzte Ziffer der Serie ist ungerade → letztes rotes Kabel durchtrennen.",
+        "Das letzte Kabel ist gelb und es gibt kein rotes Kabel → erstes Kabel durchtrennen.",
+        "Genau ein blaues Kabel → erstes Kabel durchtrennen.",
+        "Mehr als ein gelbes Kabel → viertes Kabel durchtrennen.",
+        "Sonst → zweites Kabel durchtrennen."
+      ],
+      "rules5": [
+        "Das letzte Kabel ist schwarz und die letzte Ziffer der Serie ist ungerade → viertes Kabel durchtrennen.",
+        "Genau ein rotes Kabel und mehr als ein gelbes Kabel → erstes Kabel durchtrennen.",
+        "Kein schwarzes Kabel → zweites Kabel durchtrennen.",
+        "Sonst → erstes Kabel durchtrennen."
+      ],
+      "rules6": [
+        "Kein gelbes Kabel und die letzte Ziffer der Serie ist ungerade → drittes Kabel durchtrennen.",
+        "Genau ein gelbes Kabel und mehr als ein weißes Kabel → viertes Kabel durchtrennen.",
+        "Kein rotes Kabel → letztes Kabel durchtrennen.",
+        "Sonst → zweites Kabel durchtrennen."
+      ],
+      "note": "Das „letzte Kabel“ ist das rechteste Kabel aus Sicht des Entschärfers."
+    },
+    "button": {
+      "title": "Der Knopf",
+      "intro": "Nimm die erste passende Regel. DRÜCKEN heißt einmal tippen. HALTEN heißt gedrückt lassen, bis das Handbuch das Loslassen vorgibt.",
+      "rules": [
+        "Blauer Knopf mit Aufschrift ABBRECHEN → halten.",
+        "Mehr als eine Batterie und Aufschrift ZÜNDEN → drücken.",
+        "Weißer Knopf und die Serie enthält einen Vokal → halten.",
+        "Mehr als zwei Batterien und die Serie enthält keinen Vokal → drücken.",
+        "Gelber Knopf → halten.",
+        "Roter Knopf mit Aufschrift HALTEN → drücken.",
+        "Sonst → halten."
+      ],
+      "releaseTitle": "Einen gehaltenen Knopf loslassen",
+      "releaseIntro": "Während der Entschärfer den Knopf hält, erscheint ein farbiger Streifen. Lass los, wenn der Timer die passende Ziffer zeigt.",
+      "releaseRules": [
+        "Blauer Streifen → loslassen, wenn der Timer 4 zeigt.",
+        "Weißer Streifen → loslassen, wenn der Timer 1 zeigt.",
+        "Gelber Streifen → loslassen, wenn der Timer 5 zeigt.",
+        "Roter Streifen → loslassen, wenn der Timer 7 zeigt."
+      ],
+      "releaseWarning": "Zu früh oder im falschen Moment loszulassen ist ein Fehler."
+    },
+    "keypad": {
+      "title": "Tastenfeld",
+      "intro": "Der Entschärfer sieht vier Symbole. Finde die einzige Spalte unten, die alle vier enthält, und drücke sie in dieser Reihenfolge von oben nach unten.",
+      "columnsTitle": "Symbolspalten",
+      "warning": "Ein falsches Symbol setzt die Eingabe zurück und kostet einen Fehler."
+    }
+  },
+  "result": {
+    "defused": "Bombe entschärft",
+    "exploded": "Bumm",
+    "aborted": "Runde abgebrochen",
+    "defusedText": "Der Timer blieb mit Zeit übrig stehen. Die Stadt hat nichts gemerkt.",
+    "explodedText": "Drei Fehler. Die Bombe hat diese Runde gewonnen.",
+    "abortedText": "Der Entschärfer hat die Bombe verlassen. Die Runde ist vorbei.",
+    "timeLeft": "{seconds}s waren noch auf dem Timer",
+    "rematch": "Neue Bombe scharf machen",
+    "waitingHost": "Warte auf eine neue Bombe durch den Host."
+  },
+  "notices": {
+    "hostChanged": "Du bist jetzt der Host."
+  },
+  "errors": {
+    "CONNECT": "Verbindung zum Server verloren. Wird wiederhergestellt…",
+    "AUTH": "Deine Sitzung ist abgelaufen. Lade die Aktivität neu.",
+    "GENERIC": "Etwas ist schiefgegangen. Versuch es erneut.",
+    "ROOM_NOT_FOUND": "Raum nicht gefunden. Prüfe den Code.",
+    "ROOM_FULL": "Dieser Raum ist voll.",
+    "ROOM_IN_PROGRESS": "Diese Bombe tickt bereits.",
+    "ROOM_LIMIT": "Der Server ist ausgelastet. Versuch es gleich wieder.",
+    "NOT_HOST": "Nur der Host darf das.",
+    "INVALID_PHASE": "Diese Aktion ist gerade nicht verfügbar.",
+    "NOT_ENOUGH_PLAYERS": "Es werden mindestens zwei Spieler benötigt.",
+    "NOT_DEFUSER": "Nur der Entschärfer darf die Bombe berühren.",
+    "PLAYER_NOT_FOUND": "Dieser Spieler ist nicht mehr da.",
+    "INVALID_INPUT": "Bei dieser Aktion ist etwas schiefgegangen.",
+    "RATE_LIMITED": "Etwas langsamer.",
+    "UNAUTHORIZED": "Deine Sitzung ist abgelaufen. Lade die Aktivität neu.",
+    "INTERNAL": "Unerwarteter Fehler. Versuch es erneut."
+  }
+}
